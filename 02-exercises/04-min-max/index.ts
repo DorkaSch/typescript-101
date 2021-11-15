@@ -5,8 +5,11 @@
 /**
  * Returns the minimum and maximum number from an array of numbers.
  */
-const findMinMax = (numbers: number[]): { min: number; max: number } => {
-    throw new Error("Not implemented")
+const findMinMax = (numbers: number[]): { min: number | undefined; max: number | undefined } => {
+    return {
+        min: Math.min(...numbers),
+        max: Math.max(...numbers)
+    }
 }
 
 let result = findMinMax([3, 5, 2, 7, 9, 1])

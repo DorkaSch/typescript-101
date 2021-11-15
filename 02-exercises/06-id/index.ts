@@ -14,8 +14,11 @@
 /**
  * Returns a UUID of version 4.
  */
+
+import { v4 as uuidv4 } from 'uuid';
+
 const createId = (): string => {
-    throw new Error("Not implemented")
+    return uuidv4();
 }
 
 const id = createId()
